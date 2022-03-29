@@ -1,204 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OG -->
+    <meta property="og:title" content="Polymer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://asd8116.github.io/escape-seo/" />
+    <meta
+      property="og:image"
+      content="https://asd8116.github.io/escape-seo/assets/images/og.png"
+    />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="689" />
+    <meta property="og:image:alt" content="Polymer" />
+    <meta
+      property="og:description"
+      content="Welcome to Polymer! Learn program online"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="all.css" />
+    <title>Polymer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="all.css">
-  <title>Polymer</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Polymer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signin.html">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light mb-5">
     <div class="container">
-      <a class="navbar-brand" href="./index.html">Polymer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="./courses.html">Courses</a>
+      <div class="row mb-5">
+        <div
+          class="col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-start"
+        >
+          <h1>Welcome to <span class="text-primary">Polymer</span>!</h1>
+          <p class="fs-4">Learn program online</p>
+          <div>
+            <a href="./courses.html" class="btn btn-primary btn-lg me-2"
+              >Browse Courses</a
+            >
+            <a href="./signin.html" class="btn btn-primary-soft btn-lg"
+              >Join Us</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="./assets/images/banner.jpg" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <span class="badge rounded-pill bg-primary-soft p-3 mb-2"
+            ><i class="bi bi-grid fs-6"></i
+          ></span>
+          <h2 class="h3">Easy to learn</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="badge rounded-pill bg-primary-soft p-3 mb-2"
+            ><i class="bi bi-code-square fs-6"></i
+          ></span>
+          <h2 class="h3">Systematic Instruction</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="col-md-4">
+          <span class="badge rounded-pill bg-primary-soft p-3 mb-2"
+            ><i class="bi bi-arrow-down-square fs-6"></i
+          ></span>
+          <h2 class="h3">Over 5,000 feedback</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light p-5 mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card border-0">
+              <img src="./assets/images/form.jpg" class="card-img-top" />
+              <div class="card-body p-5">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Name"
+                    />
+                    <label for="floatingName">Name</label>
+                  </div>
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Get free trial!"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h2 class="fs-3">
+              The most useful resource ever created for students.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              magnam voluptates quidem doloribus minus delectus magni voluptate
+              ipsam nulla aspernatur animi, rerum commodi, nesciunt laudantium!
+              Tempora aliquam assumenda error in voluptatum, exercitationem
+              obcaecati! Delectus, harum ex laboriosam veniam voluptas corrupti
+              consequatur exercitationem aliquid fugiat saepe autem, obcaecati,
+              cum ratione in illum aliquam iure esse. Quaerat non fuga nisi?
+              Officiis quisquam saepe dolores velit quasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fs-3">Our customers are our biggest fans.</h2>
+      </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/images/comment1.jpg"
+                    class="img-fluid rounded-start w-100"
+                    style="height: 200px; object-fit: cover"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Slowly, but surely explained everything.
+                    </h5>
+                    <p class="card-text">
+                      The course is friendly for begginers. If you want to start
+                      with font-end developer then I recommend you to start
+                      here.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/images/comment2.jpg"
+                    class="img-fluid rounded-start w-100"
+                    style="height: 200px; object-fit: cover"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Best JavaScript course</h5>
+                    <p class="card-text">
+                      If you're thinking about taking your career to the next
+                      level and learn something trendy, I really advise you in
+                      this course.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/images/comment3.jpg"
+                    class="img-fluid rounded-start w-100"
+                    style="height: 200px; object-fit: cover"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Awesome Course</h5>
+                    <p class="card-text">
+                      It was so challenging and full of knowledge!
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="text-muted">© 2021 Polymer. All Rights Reserved.</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-facebook"></i></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./signin.html">Sign In</a>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-discord"></i></a>
           </li>
         </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center align-items-start">
-        <h1>Welcome to <span class="text-primary">Polymer</span>!</h1>
-        <p class="fs-4">Learn program online</p>
-        <div>
-          <a href="./courses.html" class="btn btn-primary btn-lg me-2">Browse Courses</a>
-          <a href="./signin.html" class="btn btn-primary-soft btn-lg">Join Us</a>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid"
-          src="./assets/images/banner.jpg">
-      </div>
-    </div>
-    <div class="row mb-5">
-      <div class="col-md-4">
-        <span class="badge rounded-pill bg-primary-soft p-3 mb-2"><i class="bi bi-grid fs-6"></i></span>
-        <h2 class="h3">Easy to learn</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="col-md-4">
-        <span class="badge rounded-pill bg-primary-soft p-3 mb-2"><i class="bi bi-code-square fs-6"></i></span>
-        <h2 class="h3">Systematic Instruction</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-      <div class="col-md-4">
-        <span class="badge rounded-pill bg-primary-soft p-3 mb-2"><i class="bi bi-arrow-down-square fs-6"></i></span>
-        <h2 class="h3">Over 5,000 feedback</h2>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-light p-5 mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-4 mb-md-0">
-          <div class="card border-0">
-            <img
-              src="./assets/images/form.jpg"
-              class="card-img-top">
-            <div class="card-body p-5">
-              <form>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-4">
-                  <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
-                  <label for="floatingName">Name</label>
-                </div>
-                <input type="submit" class="btn btn-primary w-100" value="Get free trial!">
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <h2 class="fs-3">The most useful resource
-            ever created for students.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias magnam voluptates quidem doloribus minus
-            delectus magni voluptate ipsam nulla aspernatur animi, rerum commodi, nesciunt laudantium! Tempora aliquam
-            assumenda error in voluptatum, exercitationem obcaecati! Delectus, harum ex laboriosam veniam voluptas
-            corrupti consequatur exercitationem aliquid fugiat saepe autem, obcaecati, cum ratione in illum aliquam iure
-            esse. Quaerat non fuga nisi? Officiis quisquam saepe dolores velit quasi.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="text-center">
-      <h2 class="fs-3">Our customers are our biggest fans.</h2>
-    </div>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="./assets/images/comment1.jpg"
-                  class="img-fluid rounded-start w-100" style="height:200px;object-fit:cover;">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Slowly, but surely explained everything.</h5>
-                  <p class="card-text">The course is friendly for begginers. If you want to start with font-end
-                    developer then I recommend you to start here.
-                  </p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="./assets/images/comment2.jpg"
-                  class="img-fluid rounded-start w-100" style="height:200px;object-fit:cover;">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Best JavaScript course</h5>
-                  <p class="card-text">If you're thinking about taking your career to the next level and learn something
-                    trendy, I really advise you in this course.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img
-                  src="./assets/images/comment3.jpg"
-                  class="img-fluid rounded-start w-100" style="height:200px; object-fit:cover;">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Awesome Course</h5>
-                  <p class="card-text">It was so challenging and full of knowledge!
-                  </p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      </footer>
     </div>
 
-
-
-  </div>
-
-  <div class="footer container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="text-muted">© 2021 Polymer. All Rights Reserved.</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-discord"></i></a></li>
-      </ul>
-    </footer>
-  </div>
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,406 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="all.css">
-  <title>Courses | Polymer</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light mb-5">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OG -->
+    <meta property="og:title" content="Courses | Polymer" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://asd8116.github.io/escape-seo/courses.html"
+    />
+    <meta
+      property="og:image"
+      content="https://asd8116.github.io/escape-seo/assets/images/og.png"
+    />
+    <meta property="og:image:width" content="612" />
+    <meta property="og:image:height" content="689" />
+    <meta property="og:image:alt" content="Polymer" />
+    <meta property="og:description" content="Courses" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="all.css" />
+    <title>Courses | Polymer</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Polymer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="./courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signin.html">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-      <a class="navbar-brand" href="./index.html">Polymer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="./courses.html">Courses</a>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card mb-4">
+            <!-- Card header -->
+            <div class="card-header">
+              <h4 class="mb-0 fs-6">Filter</h4>
+            </div>
+            <!-- Card body -->
+            <div class="card-body">
+              <span class="dropdown-header px-0 mb-2"> Category</span>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="javascriptCheck"
+                />
+                <label class="form-check-label" for="javascriptCheck"
+                  >Javascript</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="angularCheck"
+                />
+                <label class="form-check-label" for="angularCheck"
+                  >Angular</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="nodeCheck"
+                />
+                <label class="form-check-label" for="nodeCheck">Node</label>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="vueJsCheck"
+                />
+                <label class="form-check-label" for="vueJsCheck">VueJs</label>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="bootstrapCheck"
+                />
+                <label class="form-check-label" for="bootstrapCheck"
+                  >Bootstrap</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="figmaCheck"
+                />
+                <label class="form-check-label" for="figmaCheck">Figma</label>
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="HTML5Check"
+                />
+                <label class="form-check-label" for="HTML5Check">HTML5</label>
+              </div>
+            </div>
+            <!-- Card body -->
+            <div class="card-body border-top">
+              <span class="dropdown-header px-0 mb-2"> Ratings</span>
+              <!-- Custom control -->
+              <div class="custom-control custom-radio mb-1">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="starRadio1"
+                  name="customRadio"
+                />
+                <label class="form-check-label" for="starRadio1">
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star text-warning"></i>
+                  <span class="fs-6">4.5 &amp; UP</span>
+                </label>
+              </div>
+              <!-- Custom control -->
+              <div class="custom-control custom-radio mb-1">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="starRadio2"
+                  name="customRadio"
+                  checked=""
+                />
+                <label class="form-check-label" for="starRadio2">
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star text-warning"></i>
+                  <span class="fs-6">4.0 &amp; UP</span></label
+                >
+              </div>
+              <!-- Custom control -->
+              <div class="custom-control custom-radio mb-1">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="starRadio3"
+                  name="customRadio"
+                />
+                <label class="form-check-label" for="starRadio3">
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star text-warning"></i>
+                  <span class="fs-6">3.5 &amp; UP</span></label
+                >
+              </div>
+              <!-- Custom control -->
+              <div class="custom-control custom-radio mb-1">
+                <input
+                  type="radio"
+                  class="form-check-input"
+                  id="starRadio4"
+                  name="customRadio"
+                />
+                <label class="form-check-label" for="starRadio4">
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star me-n1 text-warning"></i>
+                  <i class="mdi mdi-star text-warning"></i>
+                  <span class="fs-6">3.0 &amp; UP</span></label
+                >
+              </div>
+            </div>
+            <!-- Card body -->
+            <div class="card-body border-top">
+              <span class="dropdown-header px-0 mb-2"> Skill Level</span>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="allTwoCheck"
+                />
+                <label class="form-check-label" for="allTwoCheck"
+                  >All Level</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="beginnerTwoCheck"
+                  checked=""
+                />
+                <label class="form-check-label" for="beginnerTwoCheck"
+                  >Beginner</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="intermediateCheck"
+                />
+                <label class="form-check-label" for="intermediateCheck"
+                  >Intermediate</label
+                >
+              </div>
+              <!-- Checkbox -->
+              <div class="form-check mb-1">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="AdvancedTwoCheck"
+                />
+                <label class="form-check-label" for="AdvancedTwoCheck"
+                  >Advance</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="mb-3" style="width: 500px">
+            <input
+              class="form-control form-control-md"
+              type="text"
+              placeholder="Search Course Name"
+            />
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/js.png"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="./course_js.html"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with JavaScript</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>8h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Intermediate
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(13,245)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher1.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Charlie
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/html.png"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="./course_html.html"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with HTML</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>12h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Beginner
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(9,300)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher1.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Charlie
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/node.jpeg"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="#"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with Node.js</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>8h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Advance
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(8,890)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher1.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Charlie
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/bootstrap5.png"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="#"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with Bootstrap5</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>8h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Intermediate
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(5,465)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher2.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Casper
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/figma.png"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="#"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with Figma</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>4h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Beginner
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(12,785)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher2.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Casper
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="./assets/images/vue.png"
+                  class="card-img-top"
+                  style="height: 150px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="#"
+                      class="stretched-link h5 text-decoration-none text-dark"
+                      >Getting Started with VueJs</a
+                    >
+                  </h5>
+                  <ul class="mb-3 list-unstyled d-flex text-muted">
+                    <li class="list-item me-1">
+                      <i class="bi bi-clock me-1"></i>8h 30m
+                    </li>
+                    <li class="list-item">
+                      <i class="bi bi-bar-chart-fill"></i>
+                      Advance
+                    </li>
+                  </ul>
+                  <div class="lh-1">
+                    <span class="text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="text-warning">4.5</span>
+                    <span class="fs-6 text-muted">(13,245)</span>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <img
+                    src="./assets/images/teacher2.jpg"
+                    class="rounded-circle img-fluid"
+                    style="width: 25px; height: 25px; object-fit: cover"
+                  />
+                  Casper
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="text-muted">© 2021 Polymer. All Rights Reserved.</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-facebook"></i></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./signin.html">Sign In</a>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-discord"></i></a>
           </li>
         </ul>
-      </div>
+      </footer>
     </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card mb-4">
-          <!-- Card header -->
-          <div class="card-header">
-            <h4 class="mb-0 fs-6">Filter</h4>
-          </div>
-          <!-- Card body -->
-          <div class="card-body">
-            <span class="dropdown-header px-0 mb-2"> Category</span>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="javascriptCheck">
-              <label class="form-check-label" for="javascriptCheck">Javascript</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="angularCheck">
-              <label class="form-check-label" for="angularCheck">Angular</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="nodeCheck">
-              <label class="form-check-label" for="nodeCheck">Node</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="vueJsCheck">
-              <label class="form-check-label" for="vueJsCheck">VueJs</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="bootstrapCheck">
-              <label class="form-check-label" for="bootstrapCheck">Bootstrap</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="figmaCheck">
-              <label class="form-check-label" for="figmaCheck">Figma</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="HTML5Check">
-              <label class="form-check-label" for="HTML5Check">HTML5</label>
-            </div>
-          </div>
-          <!-- Card body -->
-          <div class="card-body border-top">
-            <span class="dropdown-header px-0 mb-2"> Ratings</span>
-            <!-- Custom control -->
-            <div class="custom-control custom-radio mb-1">
-              <input type="radio" class="form-check-input" id="starRadio1" name="customRadio">
-              <label class="form-check-label" for="starRadio1">
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star text-warning "></i>
-                <span class="fs-6">4.5 &amp; UP</span>
-              </label>
-            </div>
-            <!-- Custom control -->
-            <div class="custom-control custom-radio mb-1">
-              <input type="radio" class="form-check-input" id="starRadio2" name="customRadio" checked="">
-              <label class="form-check-label" for="starRadio2"> <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star text-warning "></i>
-                <span class="fs-6">4.0 &amp; UP</span></label>
-            </div>
-            <!-- Custom control -->
-            <div class="custom-control custom-radio mb-1">
-              <input type="radio" class="form-check-input" id="starRadio3" name="customRadio">
-              <label class="form-check-label" for="starRadio3"> <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star text-warning "></i>
-                <span class="fs-6">3.5 &amp; UP</span></label>
-            </div>
-            <!-- Custom control -->
-            <div class="custom-control custom-radio mb-1">
-              <input type="radio" class="form-check-input" id="starRadio4" name="customRadio">
-              <label class="form-check-label" for="starRadio4"> <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star me-n1 text-warning"></i>
-                <i class="mdi mdi-star text-warning "></i>
-                <span class="fs-6">3.0 &amp; UP</span></label>
-            </div>
-          </div>
-          <!-- Card body -->
-          <div class="card-body border-top">
-            <span class="dropdown-header px-0 mb-2"> Skill Level</span>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="allTwoCheck">
-              <label class="form-check-label" for="allTwoCheck">All Level</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="beginnerTwoCheck" checked="">
-              <label class="form-check-label" for="beginnerTwoCheck">Beginner</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="intermediateCheck">
-              <label class="form-check-label" for="intermediateCheck">Intermediate</label>
-            </div>
-            <!-- Checkbox -->
-            <div class="form-check mb-1">
-              <input type="checkbox" class="form-check-input" id="AdvancedTwoCheck">
-              <label class="form-check-label" for="AdvancedTwoCheck">Advance</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-9">
-        <div class="mb-3" style="width:500px;">
-          <input class="form-control form-control-md" type="text" placeholder="Search Course Name">
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/js.png" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="./course_js.html"
-                    class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    JavaScript</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>8h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Intermediate
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(13,245)</span>
-
-                </div>
-              </div>
-              <div class="card-footer">
-                <img
-                  src="./assets/images/teacher1.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Charlie
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/html.png" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="./course_html.html"
-                    class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    HTML</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>12h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Beginner
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(9,300)</span>
-
-                </div>
-              </div>
-              <div class="card-footer ">
-                <img
-                  src="./assets/images/teacher1.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Charlie
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/node.jpeg" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="#" class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    Node.js</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>8h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Advance
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(8,890)</span>
-
-                </div>
-              </div>
-              <div class="card-footer ">
-                <img
-                  src="./assets/images/teacher1.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Charlie
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/bootstrap5.png" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="#" class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    Bootstrap5</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>8h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Intermediate
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(5,465)</span>
-
-                </div>
-              </div>
-              <div class="card-footer ">
-                <img
-                  src="./assets/images/teacher2.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Casper
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/figma.png" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="#" class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    Figma</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>4h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Beginner
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(12,785)</span>
-
-                </div>
-              </div>
-              <div class="card-footer ">
-                <img
-                  src="./assets/images/teacher2.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Casper
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="card mb-3">
-              <img src="./assets/images/vue.png" class="card-img-top" style="height:150px;object-fit:cover">
-              <div class="card-body">
-                <h5 class="mb-2">
-                  <a href="#" class="stretched-link h5 text-decoration-none text-dark">Getting Started with
-                    VueJs</a>
-                </h5>
-                <ul class="mb-3 list-unstyled d-flex text-muted">
-                  <li class="list-item me-1"><i class="bi bi-clock me-1"></i>8h 30m</li>
-                  <li class="list-item">
-                    <i class="bi bi-bar-chart-fill"></i>
-                    Advance
-                  </li>
-                </ul>
-                <div class="lh-1">
-                  <span class="text-warning">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </span>
-                  <span class="text-warning">4.5</span>
-                  <span class="fs-6 text-muted">(13,245)</span>
-
-                </div>
-              </div>
-              <div class="card-footer ">
-                <img
-                  src="./assets/images/teacher2.jpg"
-                  class="rounded-circle img-fluid" style="width:25px;height:25px;object-fit:cover;
-            ">
-                Casper
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
-
-  <div class="footer container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <span class="text-muted">© 2021 Polymer. All Rights Reserved.</span>
-      </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-discord"></i></a></li>
-      </ul>
-    </footer>
-  </div>
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
